@@ -3,3 +3,51 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* nicklas css */ 
+header{
+    height: 110vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+header video{
+    z-index: -1;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    width: 100%;
+    object-fit: cover;
+}
+
+nav{
+    display: flex;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    width: 100%;
+    color: white;
+}
+nav img{
+    width: 200px;
+}
+nav ul{
+    display: block;
+    width: 100%;
+}
+
+nav ul li{
+    display: inline-block;
+
+}
+
+#headerText{
+
+}
+
+#yellowBox{
+    background: rgb(251, 255, 0);
+}
+
+#blackBox{
+    background: black;
+}
+/* nicklas css */ 
