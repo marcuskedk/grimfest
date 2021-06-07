@@ -2,4 +2,44 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-size: 14px;
+    font-family: sans-serif;
 }
+
+#footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    background-color: #F4F4F4;
+}
+
+#footer .list-menu {
+    grid-column: auto;
+    grid-row: ;
+}
+
+#footer .list-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer .list-menu ul li {}
+
+#footer .list-menu ul li a {
+    display: block;
+}
+
+#footer .list-payment {
+    grid-column: 1/-4;
+    grid-row: ;
+}
+#footer .list-payment img {}
+
+#footer .list-copyright {
+    grid-column: 4/-1;
+    grid-row: ;
+}
+
+#footer .list-copyright p {}
