@@ -3,3 +3,37 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+#secThree {
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    grid-template-rows:  1fr;
+}
+
+#secThree div {
+    display: grid;
+    grid-template-rows: 1.3fr 6fr 0.7fr;
+    background-color: black;
+    width: 350px;
+    height: auto;
+    justify-self: center;
+    
+    
+}
+
+#secThree img {
+    width: 100%;
+    grid-row: 2/3;
+}
+
+#secThree div h3{
+    font-size: 1.5em;
+    color: white;
+    padding: 0.7em;
+    margin: 0;
+
+    
+   
+
+}
+
