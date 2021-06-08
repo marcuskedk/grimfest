@@ -2,13 +2,45 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-size: 14px;
+    font-family: sans-serif;
 }
-
 #secThree {
     display: grid;
     grid-template-columns: auto auto auto auto ;
-    grid-template-rows:  1fr;
+    grid-template-rows:  1fr; padding: 50px;
+    grid-gap: 1.5em;
+    
+    
+    
 }
+
+article{
+    grid-column:1/-1;
+    grid-row: 1/2;
+    height: 20vh;
+    display: grid;
+    margin-bottom: 1em;
+    
+    
+}
+
+article H2{
+    align-self: center;
+    justify-self: center;
+    color: #414141;
+    font-size: 3em;
+  
+}
+
+article p{
+    color: black;
+    font-size: 2em;
+    align-self: center;
+    justify-self: center;
+    color: #4D4D4D;
+}
+
 
 #secThree div {
     display: grid;
@@ -31,9 +63,42 @@
     color: white;
     padding: 0.7em;
     margin: 0;
+    font-weight: 700;
+}
 
-    
-   
+p{
+    color: white;
+    justify-self: end;
+    align-self: center;
+    padding-right: 1em;
+}
+                                                /* MOBIL!!!!!!!!!!!!!!!!!!!!! */
+@media screen and (max-width: 600px) {
+
+#secThree {
+    padding: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-gap: 1.5em;
+}
+
+article h2 {
+    font-size: 1.5em;
+}
+
+article p{
+    font-size: 1em;
+}
 
 }
 
+@media screen and (max-width: 992px) and (min-width: 600px)  {
+
+#secThree {
+    padding: 30px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 1em;
+}
+
+}
