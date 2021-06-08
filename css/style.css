@@ -2,33 +2,41 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-size: 14px;
+    font-family: "Roboto",Sans-serif;
 }
+
 /* nicklas css */ 
+
 header{
     height: 110vh;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr 4fr 4fr;
 }
 
 header video{
     z-index: -1;
     grid-column: 1/-1;
     grid-row: 1/-1;
+    height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
 nav{
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
     grid-column: 1/-1;
     grid-row: 1/2;
     width: 100%;
     color: white;
 }
+
 nav img{
     width: 200px;
 }
+
 nav ul{
     display: block;
     width: 100%;
@@ -36,18 +44,73 @@ nav ul{
 
 nav ul li{
     display: inline-block;
+}
 
+#headerText h1{
+    font-size: 90px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+#headerText h3{
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
 }
 
 #headerText{
-
+    text-align: center;
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    color: white;
 }
 
 #yellowBox{
-    background: rgb(251, 255, 0);
+    align-self: self-end;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    height: 50%;
+    background: rgb(237,181,0);
+    padding: 40px;
+}
+
+#yellowBox h4{
+    font-size: 30px;
+    justify-self: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#yellowBox h3{
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#yellowBox h3 span {
+    font-weight: 300;
+    text-transform: initial;
+    font-size: 24px;
+}
+
+#yellowBox h3 span strong {
+    font-size: 24px;
 }
 
 #blackBox{
+    padding: 40px;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    color: white;
+    display: grid;
     background: black;
+}
+
+#blackBox h2{
+    align-self: center;
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
 }
 /* nicklas css */ 
