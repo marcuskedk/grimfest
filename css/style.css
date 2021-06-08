@@ -3,44 +3,17 @@
     margin: 0;
     box-sizing: border-box;
     font-size: 14px;
-    font-family: sans-serif;
-}
-
-#secThree {
-    display: grid;
-    grid-template-columns: auto auto auto auto ;
-    grid-template-rows:  1fr;
-}
-
-#secThree div {
-    display: grid;
-    grid-template-rows: 1.3fr 6fr 0.7fr;
-    background-color: black;
-    width: 350px;
-    height: auto;
-    justify-self: center;
-    
-    
-}
-
-#secThree img {
-    width: 100%;
-    grid-row: 2/3;
-}
-
-#secThree div h3{
-    font-size: 1.5em;
-    color: white;
-    padding: 0.7em;
-    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 #footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto auto;
 
     background-color: #F4F4F4;
+    padding: 50px;
+    grid-gap: 10px;
 }
 
 #footer .list-menu {
@@ -54,21 +27,114 @@
     margin: 0;
 }
 
+#footer .list-menu ul h4 {
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: #414141;
+    font-weight: 500;
+}
+
 #footer .list-menu ul li {}
 
 #footer .list-menu ul li a {
     display: block;
+    color: #4D4D4D;
+    text-decoration: none;
+    font-weight: 300;
+    width: fit-content;
+}
+
+#footer .list-menu ul li p {
+    color: #4D4D4D;
+    font-weight: 300;
+}
+
+#footer .list-menu ul li p a {
+    color: #414141;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#footer .list-menu ul form h4 {
+    color: #414141;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#footer .list-menu ul form p {
+    margin-bottom: 0.9rem;
+    font-size: 14px;
+    font-weight: 300;
+    color: #4D4D4D;
+}
+
+#footer .list-menu ul form input[type="email"] {
+    background-color: #fff;
+    display: block;
+    border-width: 0;
+    border-radius: 0;
+    font-size: 15px;
+    font-weight: 400;
+    outline: none;
+    color: #4D4D4D;
+    line-height: 1.4;
+    border: 1px solid #818a914b;
+    width: 100%;
+    max-width: 100%;
+    min-height: 47px;
+    padding: 6px 16px;
+    margin: 12px 0;
+}
+
+#footer .list-menu ul form input[type="submit"] {
+    background-color: #EDB500;
+    display: block;
+    padding: 10px;
+    font-size: 13px;
+    width: 100%;
+    min-height: 33px;
+    border-radius: 2px;
+    line-height: 1;
+    border: 1px solid #EDB500;
+    cursor: pointer;
+    color: #000;
+    font-weight: 500;
+    margin: 12px 0;
+}
+
+#footer .list-hr {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+}
+
+#footer .list-hr hr {
+    border: 0;
+    border-top: 1px solid #fff;
+    width: 100%;
 }
 
 #footer .list-payment {
     grid-column: 1/-4;
     grid-row: ;
+    margin-top: 15px;
 }
-#footer .list-payment img {}
+
+#footer .list-payment img {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
 
 #footer .list-copyright {
     grid-column: 4/-1;
     grid-row: ;
+    margin-top: 15px;
 }
 
-#footer .list-copyright p {}
+#footer .list-copyright p {
+    font-size: 11px;
+    color: #4D4D4D;
+    font-weight: 300;
+    text-align: right;
+}
