@@ -140,14 +140,7 @@
 }
 /* nicklas css header */
 
-header {
-  height: 110vh;
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  grid-template-rows: 1fr 4fr 4fr;
-}
-
-header video {
+#header video {
   z-index: -1;
   grid-column: 1/-1;
   grid-row: 1/-1;
@@ -156,7 +149,7 @@ header video {
   object-fit: cover;
 }
 
-nav {
+#header nav {
   background: rgba(0,0,0,.6);
   display: flex;
   grid-column: 1/-1;
@@ -166,18 +159,18 @@ nav {
   padding: 0 30px;
 }
 
-nav .img {
+#header nav .img {
   width: 200px;
   max-width: 130px;
   padding: 10px;
 }
 
-nav img {
+#header nav img {
   width: 100%;
   max-width: 100%;
 }
 
-nav ul {
+#header nav ul {
   display: flex;
   width: 100%;
   text-align: right;
@@ -186,12 +179,12 @@ nav ul {
   justify-content: flex-end;
 }
 
-nav ul li {
+#header nav ul li {
   align-self: center;
   padding: 13px 20px;
 }
 
-nav ul li a {
+#header nav ul li a {
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
@@ -199,7 +192,7 @@ nav ul li a {
   color: #fff;
 }
 
-#headerText {
+#header #headerText {
   padding-top: 100px;
   text-align: center;
   grid-column: 1/-1;
@@ -207,19 +200,18 @@ nav ul li a {
   color: white;
 }
 
-#headerText h1 {
-  font-size: 90px;
+#header article h2 {
+  text-align: center;
+  font-size: 50px;
   font-weight: 900;
-  text-transform: uppercase;
 }
 
-#headerText h3 {
-  font-size: 28px;
-  font-weight: 900;
-  text-transform: uppercase;
+#header article a {
+  text-decoration: none;
+  color: rgb(77, 77, 77);
 }
 
-#yellowBox {
+#header #yellowBox {
   align-self: self-end;
   grid-column: 1/2;
   grid-row: 3/4;
@@ -228,31 +220,25 @@ nav ul li a {
   padding: 40px;
 }
 
-#yellowBox h4 {
+#header #yellowBox h4 {
   font-size: 30px;
   justify-self: center;
   grid-column: 1/2;
   grid-row: 1/2;
 }
 
-#yellowBox h3 {
+#header #yellowBox h3 {
   font-size: 30px;
-  font-weight: 900;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-#yellowBox h3 span {
   font-weight: 300;
   text-transform: initial;
   font-size: 24px;
 }
 
-#yellowBox h3 span strong {
+#header #yellowBox h3 span strong {
   font-size: 24px;
 }
 
-#blackBox {
+#header #blackBox {
   padding: 40px;
   grid-column: 2/3;
   grid-row: 3/4;
@@ -261,10 +247,16 @@ nav ul li a {
   background: black;
 }
 
-#blackBox h2 {
+#header #blackBox h2 {
   align-self: center;
   text-align: center;
   font-size: 50px;
   font-weight: 900;
   text-transform: uppercase;
+}
+
+#secTwo video{
+  width: 100%;
+  grid-row: 2/3;
+  object-fit: cover;
 }
