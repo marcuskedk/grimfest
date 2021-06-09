@@ -215,8 +215,6 @@ display: inline-block;
 display: none;
 }
 
-
-
 #header #headerText {
   padding-top: 100px;
   text-align: center;
@@ -288,12 +286,104 @@ display: none;
 }
 /* MARCUS KJÆR OG NICKLAS END */
 
+/* NICKLAS  SECTION 1 START */
+
+#secOne{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 2.1em;
+}
+
+#secOne .imgsecone{
+  grid-column: auto;
+  grid-row: auto;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+#secOne .imgsecone:nth-of-type(1) {
+  padding: 50px 0 50px 50px;
+}
+
+#secOne .imgsecone:nth-of-type(2) {
+  padding: 50px 50px 50px 0;
+}
+
+#secOne .imgsecone nav{
+  background: black;
+}
+
+#secOne .imgsecone nav ul li {
+  font-size: 24px;
+  font-weight: 900;
+  padding: 15px;
+  color: #fff;
+  font-size: 24px;
+}
+
+#secOne .purple{
+  background: rgb(186,19,140);
+}
+
+#secOne .imgsecone nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+#secOne .imgsecone img{
+  width: 100%;
+}
+
+#secOne #textBox{
+  align-self: end;
+  padding: 50px;
+  margin-top: 200px;
+  z-index: 1;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  background: white;
+}
+
+#secOne #textBox h3{
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 50px;
+    font-weight: 900;
+  color: black;
+}
+
+#secOne #textBox h3 a {
+  color: #414141;
+  font-weight: 500;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+#secOne #textBox p{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+}
+
+#secOne #imgsecone3{
+  grid-column: 1/-1;
+  grid-row: 3/-1;
+}
+
+#secOne #imgsecone3 img{
+  width: 100%;
+}
+/* NICKLAS  SECTION 1 END */
+
 /* NICKLAS START */
 #secTwo video{
   padding: 50px;
   width: 100%;
-  grid-row: 2/3;
-  object-fit: cover;
+
 }
 /* NICKLAS END */
 
@@ -370,6 +460,11 @@ p{
 
 /* MOBIL!!!!!!!!!!!!!!!!!!!!! */
 @media screen and (max-width: 600px) {
+  #secOne{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-gap: .1em;
+  }
   #header {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr 4fr 1fr;
