@@ -6,6 +6,10 @@
 font-family: 'Roboto', sans-serif;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 #footer {
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -17,8 +21,8 @@ grid-gap: 10px;
 }
 
 #footer .list-menu {
-grid-column: auto;
-grid-row: ;
+  grid-column: auto;
+  grid-row: auto;
 }
 
 #footer .list-menu ul {
@@ -33,8 +37,6 @@ font-size: 18px;
 color: #414141;
 font-weight: 500;
 }
-
-#footer .list-menu ul li {}
 
 #footer .list-menu ul li a {
 display: block;
@@ -104,8 +106,8 @@ margin: 12px 0;
 }
 
 #footer .list-hr {
-grid-column: 1/-1;
-grid-row: 2/3;
+  grid-column: auto;
+  grid-row: auto;
 }
 
 #footer .list-hr hr {
@@ -115,20 +117,26 @@ width: 100%;
 }
 
 #footer .list-payment {
-grid-column: 1/-4;
-grid-row: auto;
+  grid-column: 1/-4;
+  grid-row: 3/-1;
 margin-top: 15px;
+}
+
+#footer .list-payment div {
+  width: 300px;
+  display: flex;
 }
 
 #footer .list-payment img {
 max-width: 100%;
+width: 100%;
 vertical-align: middle;
 display: inline-block;
 }
 
 #footer .list-copyright {
-  grid-column: 4/-1;
-  grid-row: auto;
+  grid-column: 4/6;
+  grid-row: 3/-1;
   margin-top: 15px;
 }
 
@@ -168,6 +176,8 @@ display: inline-block;
   padding: 0 30px;
 }
 
+ 
+
 #header nav .img {
   width: 200px;
   max-width: 130px;
@@ -200,6 +210,12 @@ display: inline-block;
   text-decoration: none;
   color: #fff;
 }
+
+.menu-icon{
+display: none;
+}
+
+
 
 #header #headerText {
   padding-top: 100px;
@@ -274,6 +290,7 @@ display: inline-block;
 
 /* NICKLAS START */
 #secTwo video{
+  padding: 50px;
   width: 100%;
   grid-row: 2/3;
   object-fit: cover;
@@ -299,6 +316,7 @@ display: inline-block;
 
 .overskrift h2 {
   align-self: center;
+  text-align: center;
   justify-self: center;
   color: #414141;
   font-size: 3em;
@@ -310,6 +328,16 @@ display: inline-block;
   align-self: center;
   justify-self: center;
   color: #4D4D4D;
+}
+
+.overskrift a {
+  color: black;
+  font-size: 2em;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  color: #4D4D4D;
+  text-decoration: none;
 }
 
 #secThree div {
@@ -342,6 +370,60 @@ p{
 
 /* MOBIL!!!!!!!!!!!!!!!!!!!!! */
 @media screen and (max-width: 600px) {
+  #header {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 4fr 1fr;
+  }
+  #header #headerText h1 {
+    font-size: 30px;
+  }
+  #header #headerText h3 {
+    font-size: 15px;
+  }
+  #header #yellowBox {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  #header #yellowBox h3 {
+    font-size: 26px;
+  }
+  #header #blackBox {
+    grid-column: 1/2;
+    grid-row: 4/4;
+  }
+  #header #blackBox h2 {
+    font-size: 30px;
+  }
+  #footer {
+    padding: 20px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+   }
+  #footer .list-menu {
+    padding: 10px 0;
+    text-align: center;
+    text-align: -webkit-center;
+  }
+  #footer .list-payment {
+    grid-row: auto;
+    grid-column: auto;
+    padding: 10px 0;
+    text-align: center;
+    text-align: -webkit-center;
+  }
+  #footer .list-copyright {
+    grid-row: auto;
+    grid-column: auto;
+    padding: 10px 0;
+    text-align: center;
+    text-align: -webkit-center;
+  }
+  #footer .list-copyright p {
+    text-align: center;
+  }
+  #secTwo video{
+    padding: 20px;
+  }
   #secThree {
     padding: 20px;
     grid-template-columns: 1fr;
@@ -356,18 +438,116 @@ p{
   }
 }
 
+/* TABLET!!!!!!!!!!!!!!!!!!!!! */
 @media screen and (max-width: 992px) and (min-width: 600px)  {
-  #secThree {
-    padding: 30px;
+  #header {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr 4fr 1fr;
+  }
+  #header #headerText h1 {
+    font-size: 40px;
+  }
+  #header #headerText h3 {
+    font-size: 22px;
+  }
+  #header #yellowBox {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  #header #yellowBox h3 {
+    font-size: 26px;
+  }
+  #header #blackBox {
+    grid-column: 1/2;
+    grid-row: 4/4;
+  }
+  #header #blackBox h2 {
+    font-size: 40px;
+  }
+  #footer {
+    padding: 20px;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    grid-gap: 1em;
+    grid-template-rows: auto auto auto auto auto;
+   }
+  #footer .list-menu {
+    padding: 10px 0;
+    text-align: center;
+    text-align: -webkit-center;
   }
-  article h2 {
-    font-size: 2em;
+  #footer .list-payment {
+    grid-row: auto;
+    grid-column: auto;
+    padding: 10px 0;
+    text-align: center;
+    text-align: -webkit-center;
   }
-  article p{
-    font-size: 1.5em;
+  #footer .list-copyright {
+    grid-row: auto;
+    grid-column: auto;
+    padding: 10px 0;
+    text-align: center;
+    text-align: -webkit-center;
   }
-}
-/* MARCUS LAURSEN END */
+  #footer .list-copyright p {
+    text-align: center;
+  }
+  #secTwo video{
+    padding: 30px;
+  }
+     
+    #secThree {
+      padding: 30px;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+      grid-gap: 1em;
+    }
+    article h2 {
+      font-size: 2em;
+    }
+    article p{
+      font-size: 1.5em;
+    }
+  }
+  /* MARCUS LAURSEN END */
+
+  @media screen and (max-width: 992px) {
+
+  
+
+    .menu-icon{
+      display: block !important;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+     }
+ 
+     #header.show .menu {
+       display: block;
+       text-align: center;
+       padding-top: 70px;
+     }
+
+     #header.show nav {
+       display: block;
+       position: absolute;
+       width: 100%;
+       height: 100vh;
+       background: rgba(0, 0, 0, 0.700);
+     }
+
+     #header.show nav .img {
+      position: absolute;
+      z-index: 2;
+     }
+ 
+     #header .menu li{
+       display: none;
+     }
+ 
+     #header.show .menu li{
+       display: block;
+       
+     }
+
+    
+  }

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>GrimFest</title>
+    <script src="js/javascript.js" defer></script>
   </head>
   <body>
     <!--  nicklas html -->
@@ -20,7 +21,7 @@
                     <img src="img/grim-logo-hvid.png" alt="grim-logo-hvid" />
                 </a>
             </div>
-            <ul>
+            <ul class="menu"> 
                 <li>
                     <a href="">De grimmeste aftener</a>
                 </li>
@@ -35,6 +36,9 @@
                 </li>
                 <li>
                     <a href="">DKK 0,00 <i class="fa fa-shopping-basket"></i></a>
+                </li>
+                <li class="menu-icon" id="icon">
+                    <a><i class="fa fa-bars"></i></a>
                 </li>
             </ul>
         </nav>
@@ -53,10 +57,11 @@
             <h2>FESTIVAL & KONCERTER I AARHUS</h2>
         </div>
     </header>
+    
     <section id="secTwo">
         <article class="overskrift">
             <h2>FOLKEAKTIER</h2>
-            <p><a href="https://grimfest.dk/type/merchandise/">STØT GRIM - SE DEM I VORES MERCHANDISE SHOP</a></p>
+            <a href="https://grimfest.dk/type/merchandise/">STØT GRIM - SE DEM I VORES MERCHANDISE SHOP</a>
         </article>
         <video src="img/grimfest-folkeaktier.mov" controls controlslist="nodownload"></video>
     </section>
@@ -146,10 +151,10 @@
                     <a href="https://grimfest.dk/fest/">Fest på Grimhøjgaard</a>
                 </li>
                 <li>
-                    <a href="">Handelsbetingelser</a>
+                    <a href="https://grimfest.dk/handelsbetingelser/">Handelsbetingelser</a>
                 </li>
                 <li>
-                    <a href="">Cookie og privatlivspolitik</a>
+                    <a href="https://grimfest.dk/cookie-og-privatlivspolitik/">Cookie og privatlivspolitik</a>
                 </li>
             </ul>
         </div>
@@ -167,15 +172,15 @@
             <hr>
         </div>
         <div class="list-payment">
-            <img src="img/payment/mobilepay-logo-oxl58qb1hjetntc2fq01ob378ygz2nw6z3rurhznr4.png" alt="">
-            <img src="img/payment/kortlogoer-oxl59gmisweuow9u61dlm4g3vqv926soeq1g78wmww.png" alt="">
+            <div>
+                <img src="img/payment/mobilepay-logo-oxl58qb1hjetntc2fq01ob378ygz2nw6z3rurhznr4.png" alt="">
+                <img src="img/payment/kortlogoer-oxl59gmisweuow9u61dlm4g3vqv926soeq1g78wmww.png" alt="">
+            </div>
         </div>
         <div class="list-copyright">
             <p>Copyright 2020 © All rights reserved. GrimFest - udviklet af 360digital.dk</p>
         </div>
     </footer>
-
-    <script src="js/javascript.js"></script>
 
 </body>
 </html>
