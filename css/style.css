@@ -215,6 +215,10 @@ display: inline-block;
 display: none;
 }
 
+.menu-icon a {
+  cursor: pointer;
+}
+
 #header #headerText {
   padding-top: 100px;
   text-align: center;
@@ -581,7 +585,7 @@ p{
   }
   #header {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr 4fr 4fr 4fr;
   }
   #header #headerText h1 {
     font-size: 40px;
@@ -591,14 +595,14 @@ p{
   }
   #header #yellowBox {
     grid-column: 1/2;
-    grid-row: 3/4;
+    grid-row: 3/5;
   }
   #header #yellowBox h3 {
     font-size: 26px;
   }
   #header #blackBox {
     grid-column: 1/2;
-    grid-row: 4/4;
+    grid-row: 5/6;
   }
   #header #blackBox h2 {
     font-size: 40px;
